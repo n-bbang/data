@@ -1,8 +1,8 @@
 # data
 
-테이블 구조
+## 테이블 구조
 
-## Users
+### Users
 
 | Field       | Type        | Null | Key  | Default | Extra |
 | ----------- | ----------- | ---- | ---- | ------- | ----- |
@@ -17,7 +17,7 @@
 
 
 
-## Platforms
+### Platforms
 
 | Field        | Type        | Null | Key  | Default | Extra |
 | ------------ | ----------- | ---- | ---- | ------- | ----- |
@@ -27,7 +27,7 @@
 
 
 
-## BossInformations
+### BossInformations
 
 | Field  | Type    | Null | Key  | Default | Extra |
 | ------ | ------- | ---- | ---- | ------- | ----- |
@@ -36,7 +36,7 @@
 
 
 
-## UserInformations
+### UserInformations
 
 | Field  | Type       | Null | Key  | Default | Extra |
 | ------ | ---------- | ---- | ---- | ------- | ----- |
@@ -46,7 +46,7 @@
 
 
 
-## RoomInformations
+### RoomInformations
 
 | Field         | Type        | Null | Key  | Default | Extra |
 | ------------- | ----------- | ---- | ---- | ------- | ----- |
