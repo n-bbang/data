@@ -33,7 +33,7 @@
 | Field  | Type    | Null | Key  | Default | Extra |
 | ------ | ------- | ---- | ---- | ------- | ----- |
 | userId | int(11) | NO   |      | NULL    |       |
-| roomId | int(11) | NO   |      | NULL    |       |
+| roomId | int(11) | NO   | PRI  | NULL    |       |
 
 
 
