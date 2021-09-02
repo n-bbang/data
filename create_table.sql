@@ -17,12 +17,6 @@ CREATE TABLE Platforms (
     imagePath VARCHAR(32)               		-- 플랫폼 이미지 path
 );
 
-DROP TABLE IF EXISTS BossInformations;
-CREATE TABLE BossInformations (
-    userId INT NOT NULL,        -- 방장 id
-    roomId INT PRIMARY KEY      -- 방 id
-);
-
 DROP TABLE IF EXISTS UserInformations;
 CREATE TABLE UserInformations (
     userId INT NOT NULL,			-- 방 참가 유저 id
@@ -35,7 +29,7 @@ CREATE TABLE RoomInformations (
     roomId INT PRIMARY KEY,     	-- 방 id
     platformId INT NOT NULL,    	-- 플랫폼 id
     bossUserId INT NOT NULL,    	-- 방장 Id
-    roomName VARCHAR(32) UNIQUE,	-- 방 이름
+    roomName VARCHAR(32),		-- 방 이름
     totalPrice INT,            		-- 총 가격
     personalPrice INT,			-- 인당 지불 가격
     maxUser INT NOT NULL,       	-- 최대 인원
