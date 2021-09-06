@@ -2,19 +2,21 @@ DROP TABLE IF EXISTS Users;
 CREATE TABLE Users (
     userId INT AUTO_INCREMENT PRIMARY KEY,			-- 유저 id
     loginId VARCHAR(32) NOT NULL UNIQUE,			-- 계정 id
-    passwd VARCHAR(32) NOT NULL,				-- 계정 비밀번호
+    passwd VARCHAR(255) NOT NULL,				-- 계정 비밀번호
     name VARCHAR(15) NOT NULL,					-- 이름
     nickname VARCHAR(15) UNIQUE,				-- 닉네임
     gender BOOLEAN NOT NULL,					-- 성별
     phoneNumber VARCHAR(32) NOT NULL UNIQUE,			-- 전화번호
-    account VARCHAR(32) UNIQUE					-- 계좌번호
+    account VARCHAR(255) UNIQUE,				-- 계좌번호
+    bank VARCHAR(32),						-- 은행이름
+    saltKey INT NOT NULL					-- salt키
 );
 
 DROP TABLE IF EXISTS Platforms;
 CREATE TABLE Platforms (
     platformId INT AUTO_INCREMENT PRIMARY KEY,		-- 플랫폼 id
     platfromName VARCHAR(32) NOT NULL UNIQUE,  		-- 플랫폼 이름 (ex Netflix, ...)
-    imagePath VARCHAR(32)               		-- 플랫폼 이미지 path
+    imagePath VARCHAR(255)               		-- 플랫폼 이미지 path
 );
 
 DROP TABLE IF EXISTS UserInformations;
